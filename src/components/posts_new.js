@@ -59,7 +59,7 @@ function validate(values){
         errors.title = 'Enter a title';
     }
     if (!values.categories) {
-        errors.content = 'Enter some content please';
+        errors.categories = 'Enter some content please';
     }
     if (!values.content) {
         errors.content = 'Enter some content please';
