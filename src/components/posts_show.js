@@ -14,11 +14,11 @@ class PostsShow extends Component {
         Posts Show!
       </div>
     );
-  };
+  }
 }
 //this.props === ownProps
 function mapStateToProps({ posts }, ownProps) {
-  return { post: posts[ownProps.match.params.id] }
+  return { post: posts[ownProps.match.params.id] };
 }
 
-export default connect(null, { fetchPost })(PostsShow);
+export default connect(mapStateToProps, { fetchPost })(PostsShow);
